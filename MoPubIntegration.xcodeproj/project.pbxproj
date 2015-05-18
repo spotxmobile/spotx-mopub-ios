@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B657E381B0A58C300546907 /* SpotXInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B657E371B0A58C300546907 /* SpotXInterstitial.m */; };
+		D099436869A28BA952889FD2 /* libPods-MoPubIntegration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 362B7E6BCED8C2AF7130B9D3 /* libPods-MoPubIntegration.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B657E1A1B0A568800546907 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		362B7E6BCED8C2AF7130B9D3 /* libPods-MoPubIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPubIntegration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		600E8884F45577EFA6E71EDE /* Pods-MoPubIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegration.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegration/Pods-MoPubIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		6B657E1C1B0A568800546907 /* libMoPubIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoPubIntegration.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B657E361B0A58C300546907 /* SpotXInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotXInterstitial.h; sourceTree = "<group>"; };
+		6B657E371B0A58C300546907 /* SpotXInterstitial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotXInterstitial.m; sourceTree = "<group>"; };
+		7DFF0118A15C910A3E2E8B2F /* Pods-MoPubIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegration/Pods-MoPubIntegration.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B657E191B0A568800546907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D099436869A28BA952889FD2 /* libPods-MoPubIntegration.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B657E131B0A568800546907 = {
+			isa = PBXGroup;
+			children = (
+				6B657E1E1B0A568800546907 /* MoPubIntegration */,
+				6B657E1D1B0A568800546907 /* Products */,
+				BA4736DC60F46B1D16D829FA /* Pods */,
+				EF0691766A8AEC8AD6BB2F96 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B657E1D1B0A568800546907 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B657E1C1B0A568800546907 /* libMoPubIntegration.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B657E1E1B0A568800546907 /* MoPubIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				6B657E361B0A58C300546907 /* SpotXInterstitial.h */,
+				6B657E371B0A58C300546907 /* SpotXInterstitial.m */,
+			);
+			path = MoPubIntegration;
+			sourceTree = "<group>";
+		};
+		BA4736DC60F46B1D16D829FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DFF0118A15C910A3E2E8B2F /* Pods-MoPubIntegration.debug.xcconfig */,
+				600E8884F45577EFA6E71EDE /* Pods-MoPubIntegration.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF0691766A8AEC8AD6BB2F96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				362B7E6BCED8C2AF7130B9D3 /* libPods-MoPubIntegration.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B657E1B1B0A568800546907 /* MoPubIntegration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B657E301B0A568800546907 /* Build configuration list for PBXNativeTarget "MoPubIntegration" */;
+			buildPhases = (
+				808C0C73CD3A289DBE54A16C /* Check Pods Manifest.lock */,
+				6B657E181B0A568800546907 /* Sources */,
+				6B657E191B0A568800546907 /* Frameworks */,
+				6B657E1A1B0A568800546907 /* CopyFiles */,
+				D69C1FB5523D96F31D3FF6EF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoPubIntegration;
+			productName = MoPubIntegration;
+			productReference = 6B657E1C1B0A568800546907 /* libMoPubIntegration.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B657E141B0A568800546907 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Lance Niles";
+				TargetAttributes = {
+					6B657E1B1B0A568800546907 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6B657E171B0A568800546907 /* Build configuration list for PBXProject "MoPubIntegration" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B657E131B0A568800546907;
+			productRefGroup = 6B657E1D1B0A568800546907 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B657E1B1B0A568800546907 /* MoPubIntegration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		808C0C73CD3A289DBE54A16C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D69C1FB5523D96F31D3FF6EF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoPubIntegration/Pods-MoPubIntegration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B657E181B0A568800546907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B657E381B0A58C300546907 /* SpotXInterstitial.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6B657E2E1B0A568800546907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B657E2F1B0A568800546907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B657E311B0A568800546907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DFF0118A15C910A3E2E8B2F /* Pods-MoPubIntegration.debug.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6B657E321B0A568800546907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 600E8884F45577EFA6E71EDE /* Pods-MoPubIntegration.release.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B657E171B0A568800546907 /* Build configuration list for PBXProject "MoPubIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B657E2E1B0A568800546907 /* Debug */,
+				6B657E2F1B0A568800546907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B657E301B0A568800546907 /* Build configuration list for PBXNativeTarget "MoPubIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B657E311B0A568800546907 /* Debug */,
+				6B657E321B0A568800546907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B657E141B0A568800546907 /* Project object */;
+}
