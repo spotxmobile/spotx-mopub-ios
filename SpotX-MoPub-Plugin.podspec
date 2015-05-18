@@ -1,6 +1,6 @@
 # Copyright (c) 2015 spotxchange. All rights reserved.
 #
-# Be sure to run `pod spec lint SpotX-SDK.podspec' to ensure this is a
+# Be sure to run `pod spec lint' to ensure this is a
 # valid spec and remove all comments before submitting the spec.
 #
 # see http://guides.cocoapods.org/syntax/podspec.html
