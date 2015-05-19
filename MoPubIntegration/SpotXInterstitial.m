@@ -18,9 +18,9 @@ NSString *const kSpotXInAppBrowserKey = @"in_app_browser";
 @end
 
 @implementation SpotXInterstitial {
-  NSString         *_adId;
-  NSDictionary     *_info;
-  SpotXAdView      *_adView;
+  NSString *_adId;
+  NSDictionary *_info;
+  SpotXAdView *_adView;
   UIViewController *_viewController;
 }
 
