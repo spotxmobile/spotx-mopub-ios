@@ -5,7 +5,7 @@
 #import "SpotXInterstitial.h"
 #import "SpotXAdManager.h"
 
-NSString *const kSpotXIABCategoryKey  = @"IAB_category";
+NSString *const kSpotXIABCategoryKey  = @"iab_category";
 NSString *const kSpotXAppStoreURLKey  = @"appstore_url";
 NSString *const kSpotXPlayStoreURLKey = @"playstore_url";
 NSString *const kSpotXChannelIDKey    = @"channel_id";
