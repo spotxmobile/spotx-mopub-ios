@@ -5,22 +5,22 @@
 #import "SpotXInterstitial.h"
 #import "SpotXAdManager.h"
 
-NSString *const kSpotXIABCategoryKey = @"IAB_category";
-NSString *const kSpotXAppStoreURLKey = @"appstore_url";
+NSString *const kSpotXIABCategoryKey  = @"IAB_category";
+NSString *const kSpotXAppStoreURLKey  = @"appstore_url";
 NSString *const kSpotXPlayStoreURLKey = @"playstore_url";
-NSString *const kSpotXChannelIDKey = @"channel_id";
-NSString *const kSpotXAppDomainKey = @"app_domain";
-NSString *const kSpotXPrefetchKey = @"prefetch";
-NSString *const kSpotxAutoInitKey = @"auto_init";
+NSString *const kSpotXChannelIDKey    = @"channel_id";
+NSString *const kSpotXAppDomainKey    = @"app_domain";
+NSString *const kSpotXPrefetchKey     = @"prefetch";
+NSString *const kSpotxAutoInitKey     = @"auto_init";
 NSString *const kSpotXInAppBrowserKey = @"in_app_browser";
 
 @interface SpotXInterstitial () <SpotXAdViewDelegate>
 @end
 
 @implementation SpotXInterstitial {
-  NSString *_adId;
-  NSDictionary *_info;
-  SpotXAdView *_adView;
+  NSString         *_adId;
+  NSDictionary     *_info;
+  SpotXAdView      *_adView;
   UIViewController *_viewController;
 }
 
@@ -121,6 +121,11 @@ NSString *const kSpotXInAppBrowserKey = @"in_app_browser";
 {
   [self.delegate interstitialCustomEventWillDisappear:self];
   [self.delegate interstitialCustomEventDidDisappear:self];
+}
+
+- (void)AdClickThru:(SpotXAdView *)adView
+{
+    [self.delegate interstitialCustomEventDidReceiveTapEvent:self];
 }
 
 @end
