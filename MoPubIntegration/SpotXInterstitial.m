@@ -29,7 +29,8 @@ NSString *const kSpotXInAppBrowserKey = @"in_app_browser";
 
 - (void)requestInterstitialWithCustomEventInfo:(NSDictionary *)info
 {
-  NSString *channelId = info[kSpotXChannelIDKey];
+//  NSString *channelId = info[kSpotXChannelIDKey];
+  NSString *channelId = @"69775";
   NSString *domain = info[kSpotXAppDomainKey];
 
   if (!(channelId.length & domain.length)) {
@@ -125,7 +126,10 @@ NSString *const kSpotXInAppBrowserKey = @"in_app_browser";
 
 - (void)AdClickThru:(SpotXAdView *)adView
 {
-    [self.delegate interstitialCustomEventDidReceiveTapEvent:self];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self.delegate interstitialCustomEventDidReceiveTapEvent:self];
+    });
 }
 
 @end
