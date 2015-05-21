@@ -22,6 +22,7 @@ NSString *const kSpotXInAppBrowserKey = @"in_app_browser";
   NSDictionary *_info;
   SpotXAdView *_adView;
   UIViewController *_viewController;
+  dispatch_once_t _clickOnce;
 }
 
 
@@ -126,8 +127,7 @@ NSString *const kSpotXInAppBrowserKey = @"in_app_browser";
 
 - (void)AdClickThru:(SpotXAdView *)adView
 {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
+    dispatch_once(&_clickOnce, ^{
         [self.delegate interstitialCustomEventDidReceiveTapEvent:self];
     });
 }
