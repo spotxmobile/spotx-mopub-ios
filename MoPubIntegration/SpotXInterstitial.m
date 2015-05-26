@@ -30,8 +30,7 @@ NSString *const kSpotXInAppBrowserKey = @"in_app_browser";
 
 - (void)requestInterstitialWithCustomEventInfo:(NSDictionary *)info
 {
-//  NSString *channelId = info[kSpotXChannelIDKey];
-  NSString *channelId = @"69775";
+  NSString *channelId = info[kSpotXChannelIDKey];
   NSString *domain = info[kSpotXAppDomainKey];
 
   if (!(channelId.length & domain.length)) {
