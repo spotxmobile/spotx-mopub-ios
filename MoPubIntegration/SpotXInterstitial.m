@@ -30,7 +30,7 @@ NSString *const kSpotXInAppBrowserKey = @"in_app_browser";
 
 - (void)requestInterstitialWithCustomEventInfo:(NSDictionary *)info
 {
-  NSString *channelId = info[kSpotXChannelIDKey];
+  NSString *channelId = @"90782"; //info[kSpotXChannelIDKey];
   NSString *domain = info[kSpotXAppDomainKey];
 
   if (!(channelId.length & domain.length)) {
@@ -110,6 +110,13 @@ NSString *const kSpotXInAppBrowserKey = @"in_app_browser";
 {
   [self.delegate interstitialCustomEvent:self didLoadAd:self.adId];
   [self.delegate interstitialCustomEventWillAppear:self];
+
+  _adView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+  _adView.frame = _viewController.view.bounds;
+
+  _viewController.view.autoresizesSubviews = YES;
+  [_viewController.view addSubview:_adView];
+
   [_adView startAd];
 }
 
