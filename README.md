@@ -10,13 +10,11 @@ If you are not already a SpotXchange publisher, click [here](http://www.spotxcha
 
 If you don't yet have a MoPub account, click [here](https://app.mopub.com/account/register/) to sign up.
 
-----------------
 
 ## What the Plugin Does
 
 The plugin allows the SpotX SDK and the MoPub SDK to communitate with each other seamlessly. To Use this new plugin, SpotX publishers will need to integrate the SpotX SDK and the MoPub SDK into their App.
 
-----------------
 
 ## How to Install the Plugin
 
@@ -34,7 +32,6 @@ pod 'SpotX-MoPub-Plugin'
 
 Download the source code and import it in your Xcode project. The project is available from our GitHub repository [here](https://github.com/spotxmobile/spotx-mopub-ios).
 
-----------------
 
 ## Configuration
 
