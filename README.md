@@ -35,7 +35,7 @@ Download the source code and import it in your Xcode project. The project is ava
 
 ## Configuration
 
-You will use the custom data field to pass configuration parameters to the SpotXc plugin. Get more information on MoPub custom events [here](https://dev.twitter.com/mopub/ad-networks). The custom data is a [JSON](http://json.org) object with the following keys:
+You will use the custom data field to pass configuration parameters to the SpotX plugin. Get more information on MoPub custom events [here](https://dev.twitter.com/mopub/ad-networks). The custom data is a [JSON](http://json.org) object with the following keys:
 
 * channel_id - Your SpotXchange  publisher channel ID
 * appstore_url - URL to your app in the Apple App store.
