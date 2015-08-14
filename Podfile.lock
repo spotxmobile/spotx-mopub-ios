@@ -2,18 +2,14 @@ PODS:
   - mopub-ios-sdk (3.7.0):
     - mopub-ios-sdk/MoPubSDK (= 3.7.0)
   - mopub-ios-sdk/MoPubSDK (3.7.0)
-  - SpotX-SDK-src (99999)
+  - SpotX-SDK (1.0.4)
 
 DEPENDENCIES:
   - mopub-ios-sdk
-  - SpotX-SDK-src (from `../spotx-sdk-ios`)
-
-EXTERNAL SOURCES:
-  SpotX-SDK-src:
-    :path: ../spotx-sdk-ios
+  - SpotX-SDK
 
 SPEC CHECKSUMS:
   mopub-ios-sdk: 18373063d006fb36857c332fa9e761abe11b64ba
-  SpotX-SDK-src: 2c079f9de38be7658bb5893c7d37321cb098a719
+  SpotX-SDK: 628faba2962da0370e04daa17499be9f24b0ed03
 
 COCOAPODS: 0.37.2
