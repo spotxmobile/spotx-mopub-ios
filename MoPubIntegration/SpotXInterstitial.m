@@ -40,7 +40,7 @@
   // Initialize SpotX SDK exactly once
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    [SpotX initializeWithApiKey:nil category:category section:section url:url];
+    [SpotX initializeWithApiKey:nil category:category section:section domain:domain url:url];
   });
 
   _adView = [[SpotXView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

@@ -15,9 +15,7 @@
   [super viewDidLoad];
 
   _adUnitIds = @[
-    @"cf37d12f721c438b8a667577d64ecd8d",
-    @"e63a3fd0f15f4e74a997cd7d3beed4d9",
-    @"edf853f847a5451d9494e8442d2d3346"
+    @"f3b430cde0604312a1319a03eb524b1b",
   ];
 
   self.clearsSelectionOnViewWillAppear = YES;
