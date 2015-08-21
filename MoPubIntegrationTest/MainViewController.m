@@ -3,11 +3,12 @@
 //
 
 #import "MainViewController.h"
-
+#import "SpotX.h"
 
 @implementation MainViewController
 {
   NSArray *_adUnitIds;
+  NSArray *_adUnitNames;
 }
 
 - (void)viewDidLoad
@@ -18,10 +19,25 @@
     @"f3b430cde0604312a1319a03eb524b1b",
   ];
 
+  _adUnitNames = @[
+     @"InnoVid VPAID",
+   ];
+
   self.clearsSelectionOnViewWillAppear = YES;
   self.tableView.allowsMultipleSelection = NO;
   self.view.autoresizesSubviews = YES;
   self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+
+  self.sdkVersion.title = [NSString stringWithFormat:@"SDK v%@", [SpotX version]];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+  [super viewWillAppear:animated];
+  NSArray *selection = [self.tableView indexPathsForSelectedRows];
+  for (NSIndexPath *indexPath in selection) {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+  }
 }
 
 - (void)playAd:(NSString *)adUnitId
@@ -37,7 +53,7 @@
   va_list args;
   va_start(args, format);
 
-  NSString *title = NSLocalizedString(@"SpotX MoPub Integration", nil);
+  NSString *title =  NSLocalizedString(@"SpotX MoPub Integration", nil);
   NSString *message = [[NSString alloc] initWithFormat:format arguments:args];
 
   va_end(args);
@@ -67,11 +83,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AdUnitId"];
-  if (!cell) {
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"AdUnitId"];
-  }
-
-  cell.textLabel.text = _adUnitIds[indexPath.row];
+  cell.textLabel.text = _adUnitNames[indexPath.row];
+  cell.detailTextLabel.text = _adUnitIds[indexPath.row];
 
   return cell;
 }

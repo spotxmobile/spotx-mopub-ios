@@ -8,6 +8,7 @@
 
 @interface MainViewController : UITableViewController <MPInterstitialAdControllerDelegate>
 
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *sdkVersion;
 
 @end
 
