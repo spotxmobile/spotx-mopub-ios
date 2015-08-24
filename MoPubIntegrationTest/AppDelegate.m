@@ -9,6 +9,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+#ifndef DEBUG
   NSString *tempdir = NSTemporaryDirectory();
   [[NSFileManager defaultManager] createDirectoryAtPath:tempdir
                             withIntermediateDirectories:YES
@@ -18,6 +19,8 @@
   NSString *filename = [[[NSProcessInfo processInfo] globallyUniqueString] stringByAppendingPathExtension:@"log"];
   _logfile = [tempdir stringByAppendingPathComponent:filename];
   [self redirectStdErr:_logfile];
+#endif
+  
   return YES;
 }
 

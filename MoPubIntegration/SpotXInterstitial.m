@@ -22,43 +22,35 @@
 
 - (void)requestInterstitialWithCustomEventInfo:(NSDictionary *)info
 {
-  NSError *error = nil;
-  if (![self validateCustomEventInfo:info error:&error]) {
+  _adId = [[NSProcessInfo processInfo] globallyUniqueString];
+  _info = info;
+
+  NSString *channelID = info[@"channel_id"];
+
+  if (!channelID.length) {
+    NSError *error = [NSError errorWithDomain:@"spotx-mopub-ios"
+                                         code:0
+                                     userInfo:@{NSLocalizedDescriptionKey:@"channel_id is required"}];
     [self.delegate interstitialCustomEvent:self didFailToLoadAdWithError:error];
     return;
   }
 
-  _adId = [[NSProcessInfo processInfo] globallyUniqueString];
-  _info = info;
-
-  NSString *category = info[@"iab_category"];
-  NSString *section = info[@"iab_section"];
-  NSString *url = info[@"appstore_url"];
-  NSString *domain = info[@"app_domain"];
-  NSString *channelID = info[@"channel_id"];
-
   // Initialize SpotX SDK exactly once
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
+    NSString *category = info[@"iab_category"];
+    NSString *section = info[@"iab_section"];
+    NSString *url = info[@"appstore_url"];
+    NSString *domain = info[@"app_domain"];
     [SpotX initializeWithApiKey:nil category:category section:section domain:domain url:url];
   });
 
   _adView = [[SpotXView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   _adView.delegate = self;
 
-  _adView.channelID = channelID;
+  _adView.channelID = [channelID description];
   _adView.params = info[@"params"];
-
-  id settings = _adView.settings;
-  [self applySettings:settings value:info[@"use_https"] forKey:@"useHTTPS"];
-  [self applySettings:settings value:info[@"use_native_browser"] forKey:@"useNativeBrowser"];
-  [self applySettings:settings value:info[@"allow_calendar"] forKey:@"allowCalendar"];
-  [self applySettings:settings value:info[@"allow_phone"] forKey:@"allowPhone"];
-  [self applySettings:settings value:info[@"allow_sms"] forKey:@"allowSMS"];
-  [self applySettings:settings value:info[@"allow_storage"] forKey:@"allowStorage"];
-  [self applySettings:settings value:info[@"autoplay"] forKey:@"autoplay"];
-  [self applySettings:settings value:info[@"skippable"] forKey:@"skippable"];
-  [self applySettings:settings value:info[@"trackable"] forKey:@"trackable"];
+  [self applySettings:_adView.settings info:info];
 
   [_adView startLoading];
   [_adView show];
@@ -69,8 +61,7 @@
 
 - (BOOL)validateCustomEventInfo:(NSDictionary *)info error:(NSError **)error
 {
-  NSArray *required = @[ @"channel_id", @"iab_category", @"iab_section",
-                         @"appstore_url", @"app_url" ];
+  NSArray *required = @[ @"channel_id" ];
 
   for (NSString *key in required) {
     id value = info[key];
@@ -91,6 +82,26 @@
   if (value != nil) {
     [settings setValue:value forKey:key];
   }
+}
+
+- (void)applySettings:(id)settings info:(NSDictionary *)info
+{
+  void (^optional)(NSString*,NSString*) = ^(NSString *key, NSString *value) {
+    if (value.length) {
+      [settings setValue:@([value boolValue]) forKey:key];
+    }
+  };
+
+
+  optional(@"useHTTPS", info[@"use_https"]);
+  optional(@"useNativeBrowser", info[@"use_native_browser"]);
+  optional(@"allowCalendar", info[@"allow_calendar"]);
+  optional(@"allowPhone", info[@"allow_phone"]);
+  optional(@"allowSMS", info[@"allow_sms"]);
+  optional(@"allowStorage", info[@"allow_storage"]);
+  optional(@"autoplay", info[@"autoplay"]);
+  optional(@"skippable", info[@"skippable"]);
+  optional(@"trackable", info[@"trackable"]);
 }
 
 - (void)showInterstitialFromRootViewController:(UIViewController *)rootViewController

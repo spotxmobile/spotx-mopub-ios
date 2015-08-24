@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = 'MoPubIntegration/*.{h,m}'
 
-  s.dependency 'mopub-ios-sdk'
-  s.dependency 'SpotX-SDK'
+  s.dependency 'mopub-ios-sdk', '~> 3.0'
+  s.dependency 'SpotX-SDK', '~> 2.0'
 
 end
