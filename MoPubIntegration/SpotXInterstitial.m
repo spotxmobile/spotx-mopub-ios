@@ -88,7 +88,10 @@
 {
   void (^optional)(NSString*,NSString*) = ^(NSString *key, NSString *value) {
     if (value.length) {
-      [settings setValue:@([value boolValue]) forKey:key];
+      @try {
+        [settings setValue:@([value boolValue]) forKey:key];
+      }
+      @finally {}
     }
   };
 
@@ -139,13 +142,17 @@
 - (void)adCompleted
 {
   [self.delegate interstitialCustomEventWillDisappear:self];
-  [self.delegate interstitialCustomEventDidDisappear:self];
+  [_viewController dismissViewControllerAnimated:YES completion:^(){
+      [self.delegate interstitialCustomEventDidDisappear:self];
+  }];
 }
 
 - (void)adClosed
 {
   [self.delegate interstitialCustomEventWillDisappear:self];
-  [self.delegate interstitialCustomEventDidDisappear:self];
+  [_viewController dismissViewControllerAnimated:YES completion:^(){
+    [self.delegate interstitialCustomEventDidDisappear:self];
+  }];
 }
 
 - (void)adClicked
