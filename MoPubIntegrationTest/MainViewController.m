@@ -16,11 +16,21 @@
   [super viewDidLoad];
 
   _adUnitIds = @[
-    @"f3b430cde0604312a1319a03eb524b1b",
+    @"034709d6e1a4493d8b5da8c7a3e0249c",
+    @"ae9908586f764104a61ff96c99556490",
+    @"45fd9477778b4ae1aa58d31a1514e87b",
+    @"6621dee45d9a41568623eb7aaa8c52de",
+    @"ec9e43b19e8646c19f28f08581153472",
+    @"3736c08a045147a4be52477f961a1ec3"
   ];
 
   _adUnitNames = @[
-     @"InnoVid VPAID",
+     @"85394 - Cattitude",
+     @"93029 - Mixpo",
+     @"116219 - Telemetry",
+     @"103105 - Sizmek",
+     @"103316 - Innovid",
+     @"121277 - Snowmobile SSL"
    ];
 
   self.clearsSelectionOnViewWillAppear = YES;
