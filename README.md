@@ -30,17 +30,29 @@ pod 'SpotX-MoPub-Plugin'
 
 ### Source Code
 
-Download the source code and import it in your Xcode project. The project is available from our GitHub repository [here](https://github.com/spotxmobile/spotx-mopub-ios).
+Download the source code and import it in your Xcode project. The project is available from our [Github repository](https://github.com/spotxmobile/spotx-mopub-ios).
 
 
 ## Configuration
 
-Use the custom data field to pass configuration parameters to SpotX plugin. Get more information on MoPub custom events [here](https://dev.twitter.com/mopub/ad-networks). The custom data is a [JSON](http://json.org) object with the following keys:
+Use the custom data field to pass configuration parameters to the SpotX plugin. Additional details are available in the documentation for [MoPub Custom Events](https://dev.twitter.com/mopub/ad-networks). The custom data is a [JSON](http://json.org) object with the following required keys:
 
-* channel_id - Your SpotXchange  publisher channel ID
-* appstore_url - URL to your app in the Apple App store.
-* app_domain - Internet domain for your app's website
+* channel\_id - Your SpotXchange publisher channel ID
 * iab_category - IAB category used to classify your app
-* in\_app\_browser - If true, ad interactions will be displayed in an internal browser rather than the system default
+* iab_section - IAB category subsection used to classify your app
+* appstore\_url - URL to your app in the Apple App store.
+* app_domain - Internet domain for your app's website
 
-Get step-by-step instructions on how to specify parameters through the MoPub UI [here](https://dev.twitter.com/mopub/ad-networks).
+In addition to the required properties, you may also include any of the following optional keys (*default value in parenthesis):
+
+* use_https - (*false*) All network requests will be done over HTTPS
+* use\_native\_browser - (*true*) If false, ad interactions will be displayed in an internal browser rather than the system default
+* allow_calendar - (*false*) Allow ads to create calendar events
+* allow_phone - (*false*) Allow ads to initiate a phone call
+* allow_sms - (*false*) Allow ads to author an SMS message 
+* allow_storage - (*false*) Allow ads to store images
+* skippable - (*false*) Request ads that are skippable
+* trackable - (*true*) Disable ad tracking
+* params - (*undefined*) A hash of key-value strings that are passed-through in the ad request
+
+Get step-by-step instructions on how to specify parameters through the MoPub UI in MoPUb'a [Ad Network Documentation](https://dev.twitter.com/mopub/ad-networks).

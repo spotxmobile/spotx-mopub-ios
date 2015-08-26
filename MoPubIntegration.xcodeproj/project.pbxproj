@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B5D50D11B8792AA00E1A354 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D50D01B8792AA00E1A354 /* LogViewController.m */; };
 		6B657E381B0A58C300546907 /* SpotXInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B657E371B0A58C300546907 /* SpotXInterstitial.m */; };
 		6B89833B1B1F48B100DA01D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B89833A1B1F48B100DA01D9 /* main.m */; };
 		6B89833E1B1F48B100DA01D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B89833D1B1F48B100DA01D9 /* AppDelegate.m */; };
@@ -34,6 +35,8 @@
 		09EF3BA4F06E7CF3D8F5A67E /* Pods-MoPubIntegrationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegrationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegrationTest/Pods-MoPubIntegrationTest.debug.xcconfig"; sourceTree = "<group>"; };
 		362B7E6BCED8C2AF7130B9D3 /* libPods-MoPubIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPubIntegration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		600E8884F45577EFA6E71EDE /* Pods-MoPubIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegration.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegration/Pods-MoPubIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		6B5D50CF1B8792AA00E1A354 /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		6B5D50D01B8792AA00E1A354 /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
 		6B657E1C1B0A568800546907 /* libMoPubIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoPubIntegration.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B657E361B0A58C300546907 /* SpotXInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotXInterstitial.h; sourceTree = "<group>"; };
 		6B657E371B0A58C300546907 /* SpotXInterstitial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotXInterstitial.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				6B89833D1B1F48B100DA01D9 /* AppDelegate.m */,
 				6B89833F1B1F48B100DA01D9 /* MainViewController.h */,
 				6B8983401B1F48B100DA01D9 /* MainViewController.m */,
+				6B5D50CF1B8792AA00E1A354 /* LogViewController.h */,
+				6B5D50D01B8792AA00E1A354 /* LogViewController.m */,
 				6B89835C1B1F6E8500DA01D9 /* Main.storyboard */,
 				6B8983451B1F48B100DA01D9 /* Images.xcassets */,
 				6B8983381B1F48B100DA01D9 /* Supporting Files */,
@@ -310,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B89835E1B1F731A00DA01D9 /* SpotXInterstitial.m in Sources */,
+				6B5D50D11B8792AA00E1A354 /* LogViewController.m in Sources */,
 				6B8983411B1F48B100DA01D9 /* MainViewController.m in Sources */,
 				6B89833E1B1F48B100DA01D9 /* AppDelegate.m in Sources */,
 				6B89833B1B1F48B100DA01D9 /* main.m in Sources */,

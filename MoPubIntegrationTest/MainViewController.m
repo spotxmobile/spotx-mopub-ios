@@ -3,11 +3,12 @@
 //
 
 #import "MainViewController.h"
-
+#import "SpotX.h"
 
 @implementation MainViewController
 {
   NSArray *_adUnitIds;
+  NSArray *_adUnitNames;
 }
 
 - (void)viewDidLoad
@@ -15,15 +16,38 @@
   [super viewDidLoad];
 
   _adUnitIds = @[
-    @"cf37d12f721c438b8a667577d64ecd8d",
-    @"e63a3fd0f15f4e74a997cd7d3beed4d9",
-    @"edf853f847a5451d9494e8442d2d3346"
+    @"034709d6e1a4493d8b5da8c7a3e0249c",
+    @"ae9908586f764104a61ff96c99556490",
+    @"45fd9477778b4ae1aa58d31a1514e87b",
+    @"6621dee45d9a41568623eb7aaa8c52de",
+    @"ec9e43b19e8646c19f28f08581153472",
+    @"3736c08a045147a4be52477f961a1ec3"
   ];
+
+  _adUnitNames = @[
+     @"85394 - Cattitude",
+     @"93029 - Mixpo",
+     @"116219 - Telemetry",
+     @"103105 - Sizmek",
+     @"103316 - Innovid",
+     @"121277 - Snowmobile SSL"
+   ];
 
   self.clearsSelectionOnViewWillAppear = YES;
   self.tableView.allowsMultipleSelection = NO;
   self.view.autoresizesSubviews = YES;
   self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+
+  self.sdkVersion.title = [NSString stringWithFormat:@"SDK v%@", [SpotX version]];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+  [super viewWillAppear:animated];
+  NSArray *selection = [self.tableView indexPathsForSelectedRows];
+  for (NSIndexPath *indexPath in selection) {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+  }
 }
 
 - (void)playAd:(NSString *)adUnitId
@@ -39,7 +63,7 @@
   va_list args;
   va_start(args, format);
 
-  NSString *title = NSLocalizedString(@"SpotX MoPub Integration", nil);
+  NSString *title =  NSLocalizedString(@"SpotX MoPub Integration", nil);
   NSString *message = [[NSString alloc] initWithFormat:format arguments:args];
 
   va_end(args);
@@ -69,11 +93,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AdUnitId"];
-  if (!cell) {
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"AdUnitId"];
-  }
-
-  cell.textLabel.text = _adUnitIds[indexPath.row];
+  cell.textLabel.text = _adUnitNames[indexPath.row];
+  cell.detailTextLabel.text = _adUnitIds[indexPath.row];
 
   return cell;
 }
