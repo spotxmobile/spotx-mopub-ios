@@ -3,7 +3,7 @@
 //
 
 #import "SpotXInterstitial.h"
-#import "SpotX.h"
+#import "AdManager/SpotX.h"
 
 
 @interface SpotXInterstitial () <SpotXAdDelegate>

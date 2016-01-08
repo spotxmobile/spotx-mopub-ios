@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44790E371C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 44790E361C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m */; };
+		44790E3A1C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 44790E391C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.m */; };
 		6B5D50D11B8792AA00E1A354 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D50D01B8792AA00E1A354 /* LogViewController.m */; };
 		6B657E381B0A58C300546907 /* SpotXInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B657E371B0A58C300546907 /* SpotXInterstitial.m */; };
 		6B89833B1B1F48B100DA01D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B89833A1B1F48B100DA01D9 /* main.m */; };
@@ -34,6 +36,10 @@
 /* Begin PBXFileReference section */
 		09EF3BA4F06E7CF3D8F5A67E /* Pods-MoPubIntegrationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegrationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegrationTest/Pods-MoPubIntegrationTest.debug.xcconfig"; sourceTree = "<group>"; };
 		362B7E6BCED8C2AF7130B9D3 /* libPods-MoPubIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPubIntegration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44790E351C3F07F200B34FC1 /* SpotXRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotXRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
+		44790E361C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotXRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
+		44790E381C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotXInstanceMediationSettings.h; sourceTree = "<group>"; };
+		44790E391C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotXInstanceMediationSettings.m; sourceTree = "<group>"; };
 		600E8884F45577EFA6E71EDE /* Pods-MoPubIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegration.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegration/Pods-MoPubIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		6B5D50CF1B8792AA00E1A354 /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
 		6B5D50D01B8792AA00E1A354 /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
@@ -99,6 +105,10 @@
 			children = (
 				6B657E361B0A58C300546907 /* SpotXInterstitial.h */,
 				6B657E371B0A58C300546907 /* SpotXInterstitial.m */,
+				44790E351C3F07F200B34FC1 /* SpotXRewardedVideoCustomEvent.h */,
+				44790E361C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m */,
+				44790E381C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.h */,
+				44790E391C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.m */,
 			);
 			path = MoPubIntegration;
 			sourceTree = "<group>";
@@ -179,6 +189,7 @@
 				6B8983331B1F48B100DA01D9 /* Frameworks */,
 				6B8983341B1F48B100DA01D9 /* Resources */,
 				27999D77EAC87EF0F932CA4E /* Copy Pods Resources */,
+				0F4182BB598EA9ECD91285D9 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +250,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F4182BB598EA9ECD91285D9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoPubIntegrationTest/Pods-MoPubIntegrationTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		27999D77EAC87EF0F932CA4E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,6 +332,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44790E371C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m in Sources */,
+				44790E3A1C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.m in Sources */,
 				6B657E381B0A58C300546907 /* SpotXInterstitial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
