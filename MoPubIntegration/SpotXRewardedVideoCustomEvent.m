@@ -48,15 +48,15 @@
   _adId = [[NSProcessInfo processInfo] globallyUniqueString];
   _info = info;
 
-  NSString *channelID = info[@"channel_id"];
+  NSString *channel_id = info[@"channel_id"];
 
   // if the ChannelID is sepcified in the mediation settings, use it instead
   SpotXInstanceMediationSettings *settings = [self.delegate instanceMediationSettingsForClass:[SpotXInstanceMediationSettings class]];
   if (nil != settings) {
-    channelID = settings.channelID;
+    channel_id = settings.channel_id;
   }
 
-  if (!channelID.length) {
+  if (!channel_id.length) {
     NSError *error = [NSError errorWithDomain:@"spotx-mopub-ios"
                                          code:0
                                      userInfo:@{NSLocalizedDescriptionKey:@"channel_id is required"}];
@@ -77,7 +77,7 @@
   _adView = [[SpotXView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   _adView.delegate = self;
 
-  _adView.channelID = [channelID description];
+  _adView.channelID = [channel_id description];
   _adView.params = info[@"params"];
   [self applySettings:_adView.settings info:info];
 
@@ -92,9 +92,9 @@
 
 - (void)presentRewardedVideoFromViewController:(UIViewController *)viewController
 {
+  [self.delegate rewardedVideoWillAppearForCustomEvent:self];
   _viewController = viewController;
   [_adView show];
-  [self.delegate rewardedVideoWillAppearForCustomEvent:self];
 }
 
 - (void)handleCustomEventInvalidated

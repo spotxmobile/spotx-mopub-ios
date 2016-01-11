@@ -19,6 +19,6 @@
 /*
  * An NSString containing the SpotX Channel ID.
  */
-@property (nonatomic, copy) NSString *channelID;
+@property (nonatomic, copy) NSString *channel_id;
 
 @end
