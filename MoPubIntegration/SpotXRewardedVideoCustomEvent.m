@@ -4,6 +4,8 @@
 
 #import "SpotXRewardedVideoCustomEvent.h"
 #import "SpotXInstanceMediationSettings.h"
+#import "MPRewardedVideoReward.h"
+#import "MPRewardedVideoError.h"
 #import "AdManager/SpotX.h"
 
 
@@ -92,15 +94,43 @@
 
 - (void)presentRewardedVideoFromViewController:(UIViewController *)viewController
 {
-  [self.delegate rewardedVideoWillAppearForCustomEvent:self];
-  _viewController = viewController;
-  [_adView show];
+  if ([self hasAdAvailable]) {
+    [self.delegate rewardedVideoWillAppearForCustomEvent:self];
+    _viewController = viewController;
+    [_adView show];
+  }
+  else {
+    NSError *error = [NSError errorWithDomain:MoPubRewardedVideoAdsSDKDomain code:MPRewardedVideoAdErrorNoAdsAvailable userInfo:nil];
+    [self.delegate rewardedVideoDidFailToPlayForCustomEvent:self error:error];
+  }
 }
 
 - (void)handleCustomEventInvalidated
 {
   _isLoaded = NO;
   _adView = nil;
+}
+
+- (void)handleAdPlayedForCustomEventNetwork
+{
+  // If we no longer have an ad available, report back up to the application that this ad expired.
+  // We receive this message only when this ad has reported an ad has loaded and another ad unit
+  // has played a video for the same ad network.
+  if (![self hasAdAvailable]) {
+    [self.delegate rewardedVideoDidExpireForCustomEvent:self];
+  }
+}
+
+- (void)finishAdWithReward:(BOOL)reward {
+  _isLoaded = NO;
+  if (reward) {
+    [self.delegate rewardedVideoShouldRewardUserForCustomEvent:self reward:[[MPRewardedVideoReward alloc] initWithCurrencyAmount:@(kMPRewardedVideoRewardCurrencyAmountUnspecified)]];
+  }
+
+  [self.delegate rewardedVideoWillDisappearForCustomEvent:self];
+  [_viewController dismissViewControllerAnimated:YES completion:^(){
+    [self.delegate rewardedVideoDidDisappearForCustomEvent:self];
+  }];
 }
 
 #pragma mark - SpotXAdDelegate
@@ -130,18 +160,14 @@
 
 - (void)adCompleted
 {
-  [self.delegate rewardedVideoWillDisappearForCustomEvent:self];
-  [_viewController dismissViewControllerAnimated:YES completion:^(){
-    [self.delegate rewardedVideoWillDisappearForCustomEvent:self];
-  }];
+  // ad completed - give reward
+  [self finishAdWithReward:YES];
 }
 
 - (void)adClosed
 {
-  [self.delegate rewardedVideoWillDisappearForCustomEvent:self];
-  [_viewController dismissViewControllerAnimated:YES completion:^(){
-    [self.delegate rewardedVideoDidDisappearForCustomEvent:self];
-  }];
+  // ad closed - give reward?
+  [self finishAdWithReward:YES];
 }
 
 - (void)adClicked
