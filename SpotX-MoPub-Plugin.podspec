@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.summary          = 'MoPub plugin for SpotXchange'
   s.authors          = 'SpotXchange, Inc.'
   s.homepage         = 'http://www.spotxchange.com'
-#  s.source           = { :git => 'https://github.com/spotxmobile/spotx-mopub-ios.git', tag: '2.0.0' }
   s.source           = { :git => 'https://github.com/spotxmobile/spotx-mopub-ios.git', branch: 'rewardedvideo' }
   s.license          =  'MIT'
   s.platform         = :ios, '7.0'
