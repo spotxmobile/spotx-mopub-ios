@@ -2,12 +2,12 @@
 //  Copyright (c) 2015 SpotXchange, Inc. All rights reserved.
 //
 
+@import SpotX_SDK;
+
 #import "SpotXRewardedVideoCustomEvent.h"
 #import "SpotXInstanceMediationSettings.h"
 #import "MPRewardedVideoReward.h"
 #import "MPRewardedVideoError.h"
-#import "AdManager/SpotX.h"
-
 
 @interface SpotXRewardedVideoCustomEvent () <SpotXAdDelegate>
 @end
