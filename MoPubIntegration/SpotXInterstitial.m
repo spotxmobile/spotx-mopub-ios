@@ -2,7 +2,7 @@
 //  Copyright (c) 2015 SpotXchange, Inc. All rights reserved.
 //
 
-#import "AdManager/SpotX.h"
+#import "SpotX/SpotX.h"
 
 #import "SpotXInterstitial.h"
 
