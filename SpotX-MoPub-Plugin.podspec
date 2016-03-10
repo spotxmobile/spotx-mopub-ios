@@ -7,19 +7,21 @@
 #
 
 Pod::Spec.new do |s|
-  s.version          = '2.0.0'
+  s.version          = '2.2.0'
   s.name             = 'SpotX-MoPub-Plugin'
   s.summary          = 'MoPub plugin for SpotXchange'
   s.authors          = 'SpotXchange, Inc.'
   s.homepage         = 'http://www.spotxchange.com'
-  s.source           = { :git => 'https://github.com/spotxmobile/spotx-mopub-ios.git', tag: '2.0.0' }
+  s.source           = { :git => 'https://github.com/spotxmobile/spotx-mopub-ios.git', branch: 'rewardedvideo' }
   s.license          =  'MIT'
   s.platform         = :ios, '7.0'
   s.requires_arc     = true
 
   s.source_files  = 'MoPubIntegration/*.{h,m}'
 
-  s.dependency 'mopub-ios-sdk', '~> 3.0'
-  s.dependency 'SpotX-SDK', '~> 2.0'
+  s.dependency 'mopub-ios-sdk', '~> 4.3'
 
+  # NOTE: Use -src dependency if doing local development
+  s.dependency 'SpotX-SDK-src'
+  #s.dependency 'SpotX-SDK'
 end

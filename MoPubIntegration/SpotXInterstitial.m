@@ -2,9 +2,9 @@
 //  Copyright (c) 2015 SpotXchange, Inc. All rights reserved.
 //
 
-#import "SpotXInterstitial.h"
-#import "SpotX.h"
+#import "SpotX/SpotX.h"
 
+#import "SpotXInterstitial.h"
 
 @interface SpotXInterstitial () <SpotXAdDelegate>
 @end
