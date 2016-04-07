@@ -1,9 +1,8 @@
 //
-//  Copyright (c) 2015 SpotXchange, Inc. All rights reserved.
+//  Copyright (c) 2016 SpotXchange, Inc. All rights reserved.
 //
 
 #import "SpotX/SpotX.h"
-
 #import "SpotXInterstitial.h"
 
 @interface SpotXInterstitial () <SpotXAdDelegate>
@@ -42,16 +41,29 @@
     NSString *section = info[@"iab_section"];
     NSString *url = info[@"appstore_url"];
     NSString *domain = info[@"app_domain"];
-    [SpotX initializeWithApiKey:nil category:category section:section domain:domain url:url];
+    [SpotX initializeWithApiKey:nil category:category section:section domain:domain url:url config:nil];
   });
 
+  // Init SpotXAdView
   _adView = [[SpotXView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   _adView.delegate = self;
 
-  _adView.channelID = [channelID description];
+  // Set channel and config
+  [_adView setChannelID:[channelID description]];
   _adView.params = info[@"params"];
-  [self applySettings:_adView.settings info:info];
+  SpotXConfigurationDict *config = @{
+    @"useHTTPS":info[@"use_https"],
+    @"allowCalendar":info[@"allow_calendar"],
+    @"allowPhone":info[@"allow_phone"],
+    @"allowSMS":info[@"allow_sms"],
+    @"allowStorage":info[@"allow_storage"],
+    @"autoplay":info[@"autoplay"],
+    @"skippable":info[@"skippable"],
+    @"trackable":info[@"trackable"]
+  };
+  [_adView setConfig:config];
 
+  // load and go
   [_adView startLoading];
   [_adView show];
 
@@ -62,7 +74,6 @@
 - (BOOL)validateCustomEventInfo:(NSDictionary *)info error:(NSError **)error
 {
   NSArray *required = @[ @"channel_id" ];
-
   for (NSString *key in required) {
     id value = info[key];
     if (value == nil) {
@@ -73,38 +84,7 @@
       return NO;
     }
   }
-
   return YES;
-}
-
-- (void)applySettings:(id)settings value:(id)value forKey:(NSString *)key
-{
-  if (value != nil) {
-    [settings setValue:value forKey:key];
-  }
-}
-
-- (void)applySettings:(id)settings info:(NSDictionary *)info
-{
-  void (^optional)(NSString*,NSString*) = ^(NSString *key, NSString *value) {
-    if (value.length) {
-      @try {
-        [settings setValue:@([value boolValue]) forKey:key];
-      }
-      @finally {}
-    }
-  };
-
-
-  optional(@"useHTTPS", info[@"use_https"]);
-  optional(@"useNativeBrowser", info[@"use_native_browser"]);
-  optional(@"allowCalendar", info[@"allow_calendar"]);
-  optional(@"allowPhone", info[@"allow_phone"]);
-  optional(@"allowSMS", info[@"allow_sms"]);
-  optional(@"allowStorage", info[@"allow_storage"]);
-  optional(@"autoplay", info[@"autoplay"]);
-  optional(@"skippable", info[@"skippable"]);
-  optional(@"trackable", info[@"trackable"]);
 }
 
 - (void)showInterstitialFromRootViewController:(UIViewController *)rootViewController

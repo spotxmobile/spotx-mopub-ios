@@ -1,5 +1,5 @@
 //
-//  Copyright (c) 2015 SpotXchange, Inc. All rights reserved.
+//  Copyright (c) 2016 SpotXchange, Inc. All rights reserved.
 //
 
 #import "SpotXInstanceMediationSettings.h"

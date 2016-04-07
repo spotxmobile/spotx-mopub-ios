@@ -1,5 +1,5 @@
 //
-//  Copyright (c) 2015 SpotXchange, Inc. All rights reserved.
+//  Copyright (c) 2016 SpotXchange, Inc. All rights reserved.
 //
 
 #import "SpotX/SpotX.h"
@@ -19,28 +19,6 @@
   UIViewController *_viewController;
   dispatch_once_t _clickOnce;
   BOOL _isLoaded;
-}
-
-- (void)applySettings:(id)settings info:(NSDictionary *)info
-{
-  void (^optional)(NSString*,NSString*) = ^(NSString *key, NSString *value) {
-    if (value.length) {
-      @try {
-        [settings setValue:@([value boolValue]) forKey:key];
-      }
-      @finally {}
-    }
-  };
-
-  optional(@"useHTTPS", info[@"use_https"]);
-  optional(@"useNativeBrowser", info[@"use_native_browser"]);
-  optional(@"allowCalendar", info[@"allow_calendar"]);
-  optional(@"allowPhone", info[@"allow_phone"]);
-  optional(@"allowSMS", info[@"allow_sms"]);
-  optional(@"allowStorage", info[@"allow_storage"]);
-  optional(@"autoplay", info[@"autoplay"]);
-  optional(@"skippable", info[@"skippable"]);
-  optional(@"trackable", info[@"trackable"]);
 }
 
 #pragma mark - MoPub Hooks
@@ -73,15 +51,25 @@
     NSString *section = info[@"iab_section"];
     NSString *url = info[@"appstore_url"];
     NSString *domain = info[@"app_domain"];
-    [SpotX initializeWithApiKey:nil category:category section:section domain:domain url:url];
+    [SpotX initializeWithApiKey:nil category:category section:section domain:domain url:url config:nil];
   });
 
   _adView = [[SpotXView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   _adView.delegate = self;
 
-  _adView.channelID = [channel_id description];
+  [_adView setChannelID:[channel_id description]];
   _adView.params = info[@"params"];
-  [self applySettings:_adView.settings info:info];
+  SpotXConfigurationDict *config = @{
+    @"useHTTPS":info[@"use_https"],
+    @"allowCalendar":info[@"allow_calendar"],
+    @"allowPhone":info[@"allow_phone"],
+    @"allowSMS":info[@"allow_sms"],
+    @"allowStorage":info[@"allow_storage"],
+    @"autoplay":info[@"autoplay"],
+    @"skippable":info[@"skippable"],
+    @"trackable":info[@"trackable"]
+  };
+  [_adView setConfig:config];
 
   _isLoaded = NO;
   [_adView startLoading];
