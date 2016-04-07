@@ -57,18 +57,34 @@
   _adView = [[SpotXView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   _adView.delegate = self;
 
+  // create config options
+  SpotXConfigurationDict *config = [[NSMutableDictionary alloc] init];
+
+  // helper function to remove nil and zero value config params
+  void (^optional)(NSString*,NSString*) = ^(NSString *key, NSString *value) {
+    if(!(value == nil || [value isKindOfClass:[NSNull class]]
+         || ([value respondsToSelector:@selector(length)]
+             && [(NSData *)value length] == 0)
+         || ([value respondsToSelector:@selector(count)]
+             && [(NSArray *)value count] == 0)
+         || ([value respondsToSelector:@selector(boolValue)] // checks if the NSString is of type __NSCFBoolean
+             && [(NSString *)value boolValue] == 0)
+         )){
+      config[key] = value;
+    }
+  };
+
+  // Set channel and config
   [_adView setChannelID:[channel_id description]];
   _adView.params = info[@"params"];
-  SpotXConfigurationDict *config = @{
-    @"useHTTPS":info[@"use_https"],
-    @"allowCalendar":info[@"allow_calendar"],
-    @"allowPhone":info[@"allow_phone"],
-    @"allowSMS":info[@"allow_sms"],
-    @"allowStorage":info[@"allow_storage"],
-    @"autoplay":info[@"autoplay"],
-    @"skippable":info[@"skippable"],
-    @"trackable":info[@"trackable"]
-  };
+  optional(@"useHTTPS",info[@"use_https"]);
+  optional(@"allowCalendar",info[@"allow_calendar"]);
+  optional(@"allowPhone",info[@"allow_phone"]);
+  optional(@"allowSMS",info[@"allow_sms"]);
+  optional(@"allowStorage",info[@"allow_storage"]);
+  optional(@"autoplay",info[@"autoplay"]);
+  optional(@"skippable",info[@"skippable"]);
+  optional(@"trackable",info[@"trackable"]);
   [_adView setConfig:config];
 
   _isLoaded = NO;
