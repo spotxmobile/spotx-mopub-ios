@@ -436,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7DFF0118A15C910A3E2E8B2F /* Pods-MoPubIntegration.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -445,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 600E8884F45577EFA6E71EDE /* Pods-MoPubIntegration.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
