@@ -41,7 +41,7 @@
     NSString *section = info[@"iab_section"];
     NSString *url = info[@"appstore_url"];
     NSString *domain = info[@"app_domain"];
-    [SpotX initializeWithApiKey:nil category:category section:section domain:domain url:url config:nil];
+    [SpotX initWithApiKey:nil category:category section:section domain:domain url:url config:nil];
   });
 
   // Init SpotXAdView
