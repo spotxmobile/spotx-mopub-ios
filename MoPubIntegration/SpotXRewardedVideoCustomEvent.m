@@ -58,7 +58,7 @@
   _adView.delegate = self;
 
   // create config options
-  SpotXConfigurationDict *config = [[NSMutableDictionary alloc] init];
+  NSMutableDictionary *config = [[NSMutableDictionary alloc] init];
 
   // helper function to remove nil and zero value config params
   void (^optional)(NSString*,NSString*) = ^(NSString *key, NSString *value) {
@@ -85,7 +85,7 @@
   optional(@"autoplay",info[@"autoplay"]);
   optional(@"skippable",info[@"skippable"]);
   optional(@"trackable",info[@"trackable"]);
-  [_adView setConfig:config];
+  [_adView setConfig:[config copy]];
 
   _isLoaded = NO;
   [_adView startLoading];
