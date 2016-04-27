@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.version          = '2.2.0'
+  s.version          = '3.0.0'
   s.name             = 'SpotX-MoPub-Plugin'
   s.summary          = 'MoPub plugin for SpotXchange'
   s.authors          = 'SpotXchange, Inc.'
@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   s.dependency 'mopub-ios-sdk', '~> 4.3'
 
   # NOTE: Use -src dependency if doing local development
-  #s.dependency 'SpotX-SDK-src'
-  s.dependency 'SpotX-SDK'
+  s.dependency 'SpotX-SDK-src'
+  #s.dependency 'SpotX-SDK'
 end
