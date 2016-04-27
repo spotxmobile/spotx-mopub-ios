@@ -18,6 +18,9 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
 
   s.source_files  = 'MoPubIntegration/*.{h,m}'
+  s.public_header_files = [
+    'MoPubIntegration/Headers/*.h'
+  ]
 
   s.dependency 'mopub-ios-sdk', '~> 4.3'
 
