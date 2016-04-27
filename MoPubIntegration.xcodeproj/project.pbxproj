@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		258493B71CD12D5A0033A4B5 /* SpotXInstanceMediationSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E381C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		258493B81CD12D650033A4B5 /* SpotXRewardedVideoCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E351C3F07F200B34FC1 /* SpotXRewardedVideoCustomEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		258493B91CD12D680033A4B5 /* SpotXInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B657E361B0A58C300546907 /* SpotXInterstitial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44790E371C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 44790E361C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m */; };
 		44790E3A1C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 44790E391C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.m */; };
 		6B5D50D11B8792AA00E1A354 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D50D01B8792AA00E1A354 /* LogViewController.m */; };
@@ -160,6 +163,19 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		258493B61CD12D540033A4B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258493B91CD12D680033A4B5 /* SpotXInterstitial.h in Headers */,
+				258493B71CD12D5A0033A4B5 /* SpotXInstanceMediationSettings.h in Headers */,
+				258493B81CD12D650033A4B5 /* SpotXRewardedVideoCustomEvent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		6B657E1B1B0A568800546907 /* MoPubIntegration */ = {
 			isa = PBXNativeTarget;
@@ -170,6 +186,7 @@
 				6B657E191B0A568800546907 /* Frameworks */,
 				6B657E1A1B0A568800546907 /* CopyFiles */,
 				D69C1FB5523D96F31D3FF6EF /* Copy Pods Resources */,
+				258493B61CD12D540033A4B5 /* Headers */,
 			);
 			buildRules = (
 			);
