@@ -16,6 +16,10 @@
 		255E08D91CD7E7980047C8A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255E08D11CD7E7980047C8A0 /* LaunchScreen.storyboard */; };
 		255E08DA1CD7E7980047C8A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255E08D21CD7E7980047C8A0 /* Assets.xcassets */; };
 		255E08DE1CD7EA3E0047C8A0 /* libMoPubIntegration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B657E1C1B0A568800546907 /* libMoPubIntegration.a */; };
+		255E08FC1CD7F7B90047C8A0 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 255E08C81CD7E7980047C8A0 /* AppDelegate.h */; };
+		255E08FD1CD7F7BC0047C8A0 /* RootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 255E08CA1CD7E7980047C8A0 /* RootViewController.h */; };
+		255E08FE1CD7F7C00047C8A0 /* RewardedVideoVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 255E08CC1CD7E7980047C8A0 /* RewardedVideoVC.h */; };
+		255E08FF1CD7F7C50047C8A0 /* InterstitialAdVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 255E08CE1CD7E7980047C8A0 /* InterstitialAdVC.h */; };
 		258493B71CD12D5A0033A4B5 /* SpotXInstanceMediationSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E381C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		258493B81CD12D650033A4B5 /* SpotXRewardedVideoCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E351C3F07F200B34FC1 /* SpotXRewardedVideoCustomEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		258493B91CD12D680033A4B5 /* SpotXInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B657E361B0A58C300546907 /* SpotXInterstitial.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -251,6 +255,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		255E08FB1CD7F7A50047C8A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255E08FC1CD7F7B90047C8A0 /* AppDelegate.h in Headers */,
+				255E08FD1CD7F7BC0047C8A0 /* RootViewController.h in Headers */,
+				255E08FE1CD7F7C00047C8A0 /* RewardedVideoVC.h in Headers */,
+				255E08FF1CD7F7C50047C8A0 /* InterstitialAdVC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		258493B61CD12D540033A4B5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,6 +286,7 @@
 				CBB454E60207A78514CAD018 /* Check Pods Manifest.lock */,
 				255E08AD1CD7E1E50047C8A0 /* Sources */,
 				255E08AE1CD7E1E50047C8A0 /* Frameworks */,
+				255E08FB1CD7F7A50047C8A0 /* Headers */,
 				255E08AF1CD7E1E50047C8A0 /* Resources */,
 				4A169C34B0FAFDDE060D28F1 /* Embed Pods Frameworks */,
 				7762B4CAAA26FCFE3690B361 /* Copy Pods Resources */,
@@ -565,6 +581,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = MoPubIntegrationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -581,6 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = MoPubIntegrationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
