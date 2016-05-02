@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		255E08B51CD7E1E50047C8A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 255E08B41CD7E1E50047C8A0 /* main.m */; };
+		255E08D41CD7E7980047C8A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 255E08C91CD7E7980047C8A0 /* AppDelegate.m */; };
+		255E08D51CD7E7980047C8A0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255E08CB1CD7E7980047C8A0 /* RootViewController.m */; };
+		255E08D61CD7E7980047C8A0 /* RewardedVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 255E08CD1CD7E7980047C8A0 /* RewardedVideoVC.m */; };
+		255E08D71CD7E7980047C8A0 /* InterstitialAdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 255E08CF1CD7E7980047C8A0 /* InterstitialAdVC.m */; };
+		255E08D81CD7E7980047C8A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255E08D01CD7E7980047C8A0 /* Main.storyboard */; };
+		255E08D91CD7E7980047C8A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255E08D11CD7E7980047C8A0 /* LaunchScreen.storyboard */; };
+		255E08DA1CD7E7980047C8A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255E08D21CD7E7980047C8A0 /* Assets.xcassets */; };
+		255E08DE1CD7EA3E0047C8A0 /* libMoPubIntegration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B657E1C1B0A568800546907 /* libMoPubIntegration.a */; };
 		258493B71CD12D5A0033A4B5 /* SpotXInstanceMediationSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E381C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		258493B81CD12D650033A4B5 /* SpotXRewardedVideoCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E351C3F07F200B34FC1 /* SpotXRewardedVideoCustomEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		258493B91CD12D680033A4B5 /* SpotXInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B657E361B0A58C300546907 /* SpotXInterstitial.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,9 +29,20 @@
 		6B8983461B1F48B100DA01D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8983451B1F48B100DA01D9 /* Images.xcassets */; };
 		6B89835D1B1F6E8500DA01D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B89835C1B1F6E8500DA01D9 /* Main.storyboard */; };
 		6B89835E1B1F731A00DA01D9 /* SpotXInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B657E371B0A58C300546907 /* SpotXInterstitial.m */; };
+		9CCBE713E230534F6DF9EF1E /* libPods-MoPubIntegrationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02601809FE9064214A1A6E25 /* libPods-MoPubIntegrationDemo.a */; };
 		AEB3A7B18ECF8081B43DF092 /* libPods-MoPubIntegrationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C704079BCA41117CE4C26E7 /* libPods-MoPubIntegrationTest.a */; };
 		D099436869A28BA952889FD2 /* libPods-MoPubIntegration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 362B7E6BCED8C2AF7130B9D3 /* libPods-MoPubIntegration.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		255E08DC1CD7E96A0047C8A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B657E141B0A568800546907 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B657E1B1B0A568800546907;
+			remoteInfo = MoPubIntegration;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6B657E1A1B0A568800546907 /* CopyFiles */ = {
@@ -37,7 +57,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02601809FE9064214A1A6E25 /* libPods-MoPubIntegrationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPubIntegrationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EF3BA4F06E7CF3D8F5A67E /* Pods-MoPubIntegrationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegrationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegrationTest/Pods-MoPubIntegrationTest.debug.xcconfig"; sourceTree = "<group>"; };
+		255E08B11CD7E1E50047C8A0 /* MoPubIntegrationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoPubIntegrationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		255E08B41CD7E1E50047C8A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		255E08C81CD7E7980047C8A0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		255E08C91CD7E7980047C8A0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		255E08CA1CD7E7980047C8A0 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		255E08CB1CD7E7980047C8A0 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		255E08CC1CD7E7980047C8A0 /* RewardedVideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardedVideoVC.h; sourceTree = "<group>"; };
+		255E08CD1CD7E7980047C8A0 /* RewardedVideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardedVideoVC.m; sourceTree = "<group>"; };
+		255E08CE1CD7E7980047C8A0 /* InterstitialAdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialAdVC.h; sourceTree = "<group>"; };
+		255E08CF1CD7E7980047C8A0 /* InterstitialAdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialAdVC.m; sourceTree = "<group>"; };
+		255E08D01CD7E7980047C8A0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		255E08D11CD7E7980047C8A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		255E08D21CD7E7980047C8A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		255E08D31CD7E7980047C8A0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32608328CF9FA30E39DF194C /* Pods-MoPubIntegrationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegrationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegrationDemo/Pods-MoPubIntegrationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		362B7E6BCED8C2AF7130B9D3 /* libPods-MoPubIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPubIntegration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44790E351C3F07F200B34FC1 /* SpotXRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotXRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
 		44790E361C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotXRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
@@ -60,10 +96,20 @@
 		6B89835C1B1F6E8500DA01D9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7DFF0118A15C910A3E2E8B2F /* Pods-MoPubIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegration/Pods-MoPubIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 		9C704079BCA41117CE4C26E7 /* libPods-MoPubIntegrationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPubIntegrationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3776008A33D337CAED4A393 /* Pods-MoPubIntegrationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegrationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegrationDemo/Pods-MoPubIntegrationDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F45D1CD55420444E16D0D44D /* Pods-MoPubIntegrationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegrationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegrationTest/Pods-MoPubIntegrationTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		255E08AE1CD7E1E50047C8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255E08DE1CD7EA3E0047C8A0 /* libMoPubIntegration.a in Frameworks */,
+				9CCBE713E230534F6DF9EF1E /* libPods-MoPubIntegrationDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B657E191B0A568800546907 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,9 +129,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		255E08B21CD7E1E50047C8A0 /* MoPubIntegrationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				255E08C81CD7E7980047C8A0 /* AppDelegate.h */,
+				255E08C91CD7E7980047C8A0 /* AppDelegate.m */,
+				255E08CA1CD7E7980047C8A0 /* RootViewController.h */,
+				255E08CB1CD7E7980047C8A0 /* RootViewController.m */,
+				255E08CC1CD7E7980047C8A0 /* RewardedVideoVC.h */,
+				255E08CD1CD7E7980047C8A0 /* RewardedVideoVC.m */,
+				255E08CE1CD7E7980047C8A0 /* InterstitialAdVC.h */,
+				255E08CF1CD7E7980047C8A0 /* InterstitialAdVC.m */,
+				255E08DF1CD7EB3B0047C8A0 /* resources */,
+				255E08B31CD7E1E50047C8A0 /* Supporting Files */,
+			);
+			path = MoPubIntegrationDemo;
+			sourceTree = "<group>";
+		};
+		255E08B31CD7E1E50047C8A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				255E08B41CD7E1E50047C8A0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		255E08DF1CD7EB3B0047C8A0 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				255E08D01CD7E7980047C8A0 /* Main.storyboard */,
+				255E08D11CD7E7980047C8A0 /* LaunchScreen.storyboard */,
+				255E08D21CD7E7980047C8A0 /* Assets.xcassets */,
+				255E08D31CD7E7980047C8A0 /* Info.plist */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
 		6B657E131B0A568800546907 = {
 			isa = PBXGroup;
 			children = (
+				255E08B21CD7E1E50047C8A0 /* MoPubIntegrationDemo */,
 				6B657E1E1B0A568800546907 /* MoPubIntegration */,
 				6B8983371B1F48B100DA01D9 /* MoPubIntegrationTest */,
 				6B657E1D1B0A568800546907 /* Products */,
@@ -99,6 +182,7 @@
 			children = (
 				6B657E1C1B0A568800546907 /* libMoPubIntegration.a */,
 				6B8983361B1F48B100DA01D9 /* MoPubIntegrationTest.app */,
+				255E08B11CD7E1E50047C8A0 /* MoPubIntegrationDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +232,8 @@
 				600E8884F45577EFA6E71EDE /* Pods-MoPubIntegration.release.xcconfig */,
 				09EF3BA4F06E7CF3D8F5A67E /* Pods-MoPubIntegrationTest.debug.xcconfig */,
 				F45D1CD55420444E16D0D44D /* Pods-MoPubIntegrationTest.release.xcconfig */,
+				32608328CF9FA30E39DF194C /* Pods-MoPubIntegrationDemo.debug.xcconfig */,
+				D3776008A33D337CAED4A393 /* Pods-MoPubIntegrationDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -157,6 +243,7 @@
 			children = (
 				362B7E6BCED8C2AF7130B9D3 /* libPods-MoPubIntegration.a */,
 				9C704079BCA41117CE4C26E7 /* libPods-MoPubIntegrationTest.a */,
+				02601809FE9064214A1A6E25 /* libPods-MoPubIntegrationDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,6 +264,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		255E08B01CD7E1E50047C8A0 /* MoPubIntegrationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255E08C71CD7E1E50047C8A0 /* Build configuration list for PBXNativeTarget "MoPubIntegrationDemo" */;
+			buildPhases = (
+				CBB454E60207A78514CAD018 /* Check Pods Manifest.lock */,
+				255E08AD1CD7E1E50047C8A0 /* Sources */,
+				255E08AE1CD7E1E50047C8A0 /* Frameworks */,
+				255E08AF1CD7E1E50047C8A0 /* Resources */,
+				4A169C34B0FAFDDE060D28F1 /* Embed Pods Frameworks */,
+				7762B4CAAA26FCFE3690B361 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				255E08DD1CD7E96A0047C8A0 /* PBXTargetDependency */,
+			);
+			name = MoPubIntegrationDemo;
+			productName = MoPubIntegrationDemo;
+			productReference = 255E08B11CD7E1E50047C8A0 /* MoPubIntegrationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6B657E1B1B0A568800546907 /* MoPubIntegration */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B657E301B0A568800546907 /* Build configuration list for PBXNativeTarget "MoPubIntegration" */;
@@ -226,6 +334,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Lance Niles";
 				TargetAttributes = {
+					255E08B01CD7E1E50047C8A0 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					6B657E1B1B0A568800546907 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
@@ -249,12 +360,23 @@
 			projectRoot = "";
 			targets = (
 				6B657E1B1B0A568800546907 /* MoPubIntegration */,
+				255E08B01CD7E1E50047C8A0 /* MoPubIntegrationDemo */,
 				6B8983351B1F48B100DA01D9 /* MoPubIntegrationTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		255E08AF1CD7E1E50047C8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255E08D81CD7E7980047C8A0 /* Main.storyboard in Resources */,
+				255E08DA1CD7E7980047C8A0 /* Assets.xcassets in Resources */,
+				255E08D91CD7E7980047C8A0 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B8983341B1F48B100DA01D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,7 +434,52 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		4A169C34B0FAFDDE060D28F1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoPubIntegrationDemo/Pods-MoPubIntegrationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7762B4CAAA26FCFE3690B361 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoPubIntegrationDemo/Pods-MoPubIntegrationDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		808C0C73CD3A289DBE54A16C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CBB454E60207A78514CAD018 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -345,6 +512,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		255E08AD1CD7E1E50047C8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255E08D41CD7E7980047C8A0 /* AppDelegate.m in Sources */,
+				255E08D71CD7E7980047C8A0 /* InterstitialAdVC.m in Sources */,
+				255E08B51CD7E1E50047C8A0 /* main.m in Sources */,
+				255E08D61CD7E7980047C8A0 /* RewardedVideoVC.m in Sources */,
+				255E08D51CD7E7980047C8A0 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B657E181B0A568800546907 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,7 +548,48 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		255E08DD1CD7E96A0047C8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B657E1B1B0A568800546907 /* MoPubIntegration */;
+			targetProxy = 255E08DC1CD7E96A0047C8A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		255E08C51CD7E1E50047C8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32608328CF9FA30E39DF194C /* Pods-MoPubIntegrationDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = MoPubIntegrationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spotxchange.mopubdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		255E08C61CD7E1E50047C8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3776008A33D337CAED4A393 /* Pods-MoPubIntegrationDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MoPubIntegrationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spotxchange.mopubdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		6B657E2E1B0A568800546907 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,7 +705,7 @@
 				INFOPLIST_FILE = MoPubIntegrationTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spotxchange.sdk.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spotxchange.mopubdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,7 +722,7 @@
 				INFOPLIST_FILE = MoPubIntegrationTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spotxchange.sdk.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spotxchange.mopubdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,6 +732,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		255E08C71CD7E1E50047C8A0 /* Build configuration list for PBXNativeTarget "MoPubIntegrationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255E08C51CD7E1E50047C8A0 /* Debug */,
+				255E08C61CD7E1E50047C8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6B657E171B0A568800546907 /* Build configuration list for PBXProject "MoPubIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
