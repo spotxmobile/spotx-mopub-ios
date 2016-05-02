@@ -20,9 +20,9 @@
 		255E08FD1CD7F7BC0047C8A0 /* RootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 255E08CA1CD7E7980047C8A0 /* RootViewController.h */; };
 		255E08FE1CD7F7C00047C8A0 /* RewardedVideoVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 255E08CC1CD7E7980047C8A0 /* RewardedVideoVC.h */; };
 		255E08FF1CD7F7C50047C8A0 /* InterstitialAdVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 255E08CE1CD7E7980047C8A0 /* InterstitialAdVC.h */; };
-		258493B71CD12D5A0033A4B5 /* SpotXInstanceMediationSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E381C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		258493B81CD12D650033A4B5 /* SpotXRewardedVideoCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E351C3F07F200B34FC1 /* SpotXRewardedVideoCustomEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		258493B91CD12D680033A4B5 /* SpotXInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B657E361B0A58C300546907 /* SpotXInterstitial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		258493B71CD12D5A0033A4B5 /* SpotXInstanceMediationSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E381C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.h */; };
+		258493B81CD12D650033A4B5 /* SpotXRewardedVideoCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E351C3F07F200B34FC1 /* SpotXRewardedVideoCustomEvent.h */; };
+		258493B91CD12D680033A4B5 /* SpotXInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B657E361B0A58C300546907 /* SpotXInterstitial.h */; };
 		44790E371C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 44790E361C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m */; };
 		44790E3A1C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 44790E391C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.m */; };
 		6B5D50D11B8792AA00E1A354 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D50D01B8792AA00E1A354 /* LogViewController.m */; };
@@ -307,10 +307,10 @@
 			buildPhases = (
 				808C0C73CD3A289DBE54A16C /* Check Pods Manifest.lock */,
 				6B657E181B0A568800546907 /* Sources */,
+				258493B61CD12D540033A4B5 /* Headers */,
 				6B657E191B0A568800546907 /* Frameworks */,
 				6B657E1A1B0A568800546907 /* CopyFiles */,
 				D69C1FB5523D96F31D3FF6EF /* Copy Pods Resources */,
-				258493B61CD12D540033A4B5 /* Headers */,
 			);
 			buildRules = (
 			);
