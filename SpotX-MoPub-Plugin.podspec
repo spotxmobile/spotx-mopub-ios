@@ -1,4 +1,4 @@
-# Copyright (c) 2015 spotxchange. All rights reserved.
+# Copyright (c) 2016 spotxchange. All rights reserved.
 #
 # Be sure to run `pod spec lint' to ensure this is a
 # valid spec and remove all comments before submitting the spec.
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary          = 'MoPub plugin for SpotXchange'
   s.authors          = 'SpotXchange, Inc.'
   s.homepage         = 'http://www.spotxchange.com'
-  s.source           = { :git => 'https://github.com/spotxmobile/spotx-mopub-ios.git', tag: 'v2.2' }
+  s.source           = { :git => 'https://github.com/spotxmobile/spotx-mopub-ios.git', tag: 'v3.0' }
   s.license          =  'MIT'
   s.platform         = :ios, '7.0'
   s.requires_arc     = true
