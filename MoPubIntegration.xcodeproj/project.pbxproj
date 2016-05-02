@@ -63,7 +63,7 @@
 /* Begin PBXFileReference section */
 		02601809FE9064214A1A6E25 /* libPods-MoPubIntegrationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPubIntegrationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EF3BA4F06E7CF3D8F5A67E /* Pods-MoPubIntegrationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegrationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegrationTest/Pods-MoPubIntegrationTest.debug.xcconfig"; sourceTree = "<group>"; };
-		255E08B11CD7E1E50047C8A0 /* MoPubIntegrationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoPubIntegrationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		255E08B11CD7E1E50047C8A0 /* MoPub Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoPub Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		255E08B41CD7E1E50047C8A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		255E08C81CD7E7980047C8A0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		255E08C91CD7E7980047C8A0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 			children = (
 				6B657E1C1B0A568800546907 /* libMoPubIntegration.a */,
 				6B8983361B1F48B100DA01D9 /* MoPubIntegrationTest.app */,
-				255E08B11CD7E1E50047C8A0 /* MoPubIntegrationDemo.app */,
+				255E08B11CD7E1E50047C8A0 /* MoPub Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 			);
 			name = MoPubIntegrationDemo;
 			productName = MoPubIntegrationDemo;
-			productReference = 255E08B11CD7E1E50047C8A0 /* MoPubIntegrationDemo.app */;
+			productReference = 255E08B11CD7E1E50047C8A0 /* MoPub Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6B657E1B1B0A568800546907 /* MoPubIntegration */ = {
@@ -586,7 +586,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spotxchange.mopubdemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "MoPub Demo";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -603,7 +603,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spotxchange.mopubdemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "MoPub Demo";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
