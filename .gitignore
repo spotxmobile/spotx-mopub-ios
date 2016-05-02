@@ -17,4 +17,5 @@ DerivedData
 *.xcscmblueprint
 Pods/
 .DS_Store
-
+*.xcworkspace
+*.lock
