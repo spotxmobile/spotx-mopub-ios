@@ -27,7 +27,7 @@ end
 
 target 'MoPubIntegrationDemo' do
   shared_pods
-  #pod 'HockeySDK', '~> 3.8.5'
+  pod 'HockeySDK', '~> 3.8.5'
 end
 
 target 'MoPubIntegration' do

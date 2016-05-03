@@ -375,8 +375,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6B657E1B1B0A568800546907 /* MoPubIntegration */,
 				255E08B01CD7E1E50047C8A0 /* MoPubIntegrationDemo */,
+				6B657E1B1B0A568800546907 /* MoPubIntegration */,
 				6B8983351B1F48B100DA01D9 /* MoPubIntegrationTest */,
 			);
 		};
@@ -599,6 +599,10 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"HOCKEYAPP_ID=ab5e22872b764e0dbca37bae0872d9ad",
+				);
 				INFOPLIST_FILE = MoPubIntegrationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -704,6 +708,7 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEFINES_MODULE = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
