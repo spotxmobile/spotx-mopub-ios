@@ -583,7 +583,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = MoPubIntegrationDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spotxchange.mopubdemo;
 				PRODUCT_NAME = "MoPub Demo";
@@ -604,7 +604,7 @@
 					"HOCKEYAPP_ID=ab5e22872b764e0dbca37bae0872d9ad",
 				);
 				INFOPLIST_FILE = MoPubIntegrationDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spotxchange.mopubdemo;
 				PRODUCT_NAME = "MoPub Demo";
