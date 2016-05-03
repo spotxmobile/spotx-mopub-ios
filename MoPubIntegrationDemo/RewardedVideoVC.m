@@ -161,6 +161,11 @@
   _btnPlayAd.alpha = 0.3;
 }
 
+- (void)rewardedVideoAdShouldRewardForAdUnitID:(NSString *)adUnitID reward:(MPRewardedVideoReward *)reward
+{
+  [self logToScreen:[NSString stringWithFormat:@"> Should reward for: %@", adUnitID]];
+}
+
 - (void)rewardedVideoAdDidReceiveTapEventForAdUnitID:(NSString *)adUnitID
 {
   [self logToScreen:@"> Ad Clicked"];
