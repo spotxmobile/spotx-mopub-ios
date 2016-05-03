@@ -582,6 +582,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = MoPubIntegrationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -601,7 +602,7 @@
 				DEFINES_MODULE = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
-					"HOCKEYAPP_ID=ab5e22872b764e0dbca37bae0872d9ad",
+					"HOCKEYAPP=1",
 				);
 				INFOPLIST_FILE = MoPubIntegrationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

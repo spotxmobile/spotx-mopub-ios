@@ -4,7 +4,7 @@
 
 #import "AppDelegate.h"
 
-#if HOCKEYAPP_ID
+#if HOCKEYAPP
   @import HockeySDK;
 #endif
 
@@ -17,8 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-  #if HOCKEYAPP_ID
-    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:HOCKEYAPP_ID];
+  #if HOCKEYAPP
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"ab5e22872b764e0dbca37bae0872d9ad"];
     [[BITHockeyManager sharedHockeyManager] startManager];
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
   #endif
