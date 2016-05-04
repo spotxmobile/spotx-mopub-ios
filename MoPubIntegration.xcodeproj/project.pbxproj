@@ -23,6 +23,9 @@
 		258493B71CD12D5A0033A4B5 /* SpotXInstanceMediationSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E381C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.h */; };
 		258493B81CD12D650033A4B5 /* SpotXRewardedVideoCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 44790E351C3F07F200B34FC1 /* SpotXRewardedVideoCustomEvent.h */; };
 		258493B91CD12D680033A4B5 /* SpotXInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B657E361B0A58C300546907 /* SpotXInterstitial.h */; };
+		25A449601CDA514D0075DA87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A4495F1CDA514D0075DA87 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		25A449631CDA57600075DA87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A4495F1CDA514D0075DA87 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		25A449651CDA5A120075DA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A449641CDA5A120075DA87 /* Main.storyboard */; };
 		44790E371C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 44790E361C3F08B200B34FC1 /* SpotXRewardedVideoCustomEvent.m */; };
 		44790E3A1C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 44790E391C3FFF8C00B34FC1 /* SpotXInstanceMediationSettings.m */; };
 		6B5D50D11B8792AA00E1A354 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D50D01B8792AA00E1A354 /* LogViewController.m */; };
@@ -31,7 +34,6 @@
 		6B89833E1B1F48B100DA01D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B89833D1B1F48B100DA01D9 /* AppDelegate.m */; };
 		6B8983411B1F48B100DA01D9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8983401B1F48B100DA01D9 /* MainViewController.m */; };
 		6B8983461B1F48B100DA01D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8983451B1F48B100DA01D9 /* Images.xcassets */; };
-		6B89835D1B1F6E8500DA01D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B89835C1B1F6E8500DA01D9 /* Main.storyboard */; };
 		6B89835E1B1F731A00DA01D9 /* SpotXInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B657E371B0A58C300546907 /* SpotXInterstitial.m */; };
 		9CCBE713E230534F6DF9EF1E /* libPods-MoPubIntegrationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02601809FE9064214A1A6E25 /* libPods-MoPubIntegrationDemo.a */; };
 		AEB3A7B18ECF8081B43DF092 /* libPods-MoPubIntegrationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C704079BCA41117CE4C26E7 /* libPods-MoPubIntegrationTest.a */; };
@@ -77,6 +79,8 @@
 		255E08D11CD7E7980047C8A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		255E08D21CD7E7980047C8A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		255E08D31CD7E7980047C8A0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25A4495F1CDA514D0075DA87 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		25A449641CDA5A120075DA87 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		32608328CF9FA30E39DF194C /* Pods-MoPubIntegrationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegrationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegrationDemo/Pods-MoPubIntegrationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		362B7E6BCED8C2AF7130B9D3 /* libPods-MoPubIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPubIntegration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44790E351C3F07F200B34FC1 /* SpotXRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotXRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
@@ -97,7 +101,6 @@
 		6B89833F1B1F48B100DA01D9 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		6B8983401B1F48B100DA01D9 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		6B8983451B1F48B100DA01D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6B89835C1B1F6E8500DA01D9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7DFF0118A15C910A3E2E8B2F /* Pods-MoPubIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegration/Pods-MoPubIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 		9C704079BCA41117CE4C26E7 /* libPods-MoPubIntegrationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPubIntegrationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3776008A33D337CAED4A393 /* Pods-MoPubIntegrationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPubIntegrationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoPubIntegrationDemo/Pods-MoPubIntegrationDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A449631CDA57600075DA87 /* WebKit.framework in Frameworks */,
 				255E08DE1CD7EA3E0047C8A0 /* libMoPubIntegration.a in Frameworks */,
 				9CCBE713E230534F6DF9EF1E /* libPods-MoPubIntegrationDemo.a in Frameworks */,
 			);
@@ -126,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A449601CDA514D0075DA87 /* WebKit.framework in Frameworks */,
 				AEB3A7B18ECF8081B43DF092 /* libPods-MoPubIntegrationTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,8 +218,8 @@
 				6B8983401B1F48B100DA01D9 /* MainViewController.m */,
 				6B5D50CF1B8792AA00E1A354 /* LogViewController.h */,
 				6B5D50D01B8792AA00E1A354 /* LogViewController.m */,
-				6B89835C1B1F6E8500DA01D9 /* Main.storyboard */,
 				6B8983451B1F48B100DA01D9 /* Images.xcassets */,
+				25A449641CDA5A120075DA87 /* Main.storyboard */,
 				6B8983381B1F48B100DA01D9 /* Supporting Files */,
 			);
 			path = MoPubIntegrationTest;
@@ -245,6 +250,7 @@
 		EF0691766A8AEC8AD6BB2F96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25A4495F1CDA514D0075DA87 /* WebKit.framework */,
 				362B7E6BCED8C2AF7130B9D3 /* libPods-MoPubIntegration.a */,
 				9C704079BCA41117CE4C26E7 /* libPods-MoPubIntegrationTest.a */,
 				02601809FE9064214A1A6E25 /* libPods-MoPubIntegrationDemo.a */,
@@ -348,10 +354,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Lance Niles";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					255E08B01CD7E1E50047C8A0 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = M4T49QG5CY;
 					};
 					6B657E1B1B0A568800546907 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -397,8 +404,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B89835D1B1F6E8500DA01D9 /* Main.storyboard in Resources */,
 				6B8983461B1F48B100DA01D9 /* Images.xcassets in Resources */,
+				25A449651CDA5A120075DA87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,12 +586,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = MoPubIntegrationDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spotxchange.mopubdemo;
 				PRODUCT_NAME = "MoPub Demo";
@@ -598,6 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -605,7 +614,7 @@
 					"HOCKEYAPP=1",
 				);
 				INFOPLIST_FILE = MoPubIntegrationDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spotxchange.mopubdemo;
 				PRODUCT_NAME = "MoPub Demo";

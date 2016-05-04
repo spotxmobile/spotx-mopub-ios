@@ -3,7 +3,7 @@
 //
 
 #import "MainViewController.h"
-#import "SpotX.h"
+#import "SpotX/SpotX.h"
 
 @implementation MainViewController
 {
@@ -95,7 +95,7 @@
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AdUnitId"];
   cell.textLabel.text = _adUnitNames[indexPath.row];
   cell.detailTextLabel.text = _adUnitIds[indexPath.row];
-
+  cell.detailTextLabel.textColor = [UIColor grayColor];
   return cell;
 }
 
