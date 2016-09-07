@@ -3,7 +3,7 @@
 //
 
 #import "MainViewController.h"
-#import "SpotX.h"
+#import "SpotX/SpotX.h"
 
 @implementation MainViewController
 {
