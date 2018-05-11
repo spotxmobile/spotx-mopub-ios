@@ -1,5 +1,5 @@
 //
-//  Copyright (c) 2015 SpotXchange, Inc. All rights reserved.
+//  Copyright (c) 2017 SpotXchange, Inc. All rights reserved.
 //
 
 #if __has_include(<MoPub/MoPub.h>)
@@ -15,6 +15,11 @@
  */
 
 @interface SpotXInstanceMediationSettings : NSObject <MPMediationSettingsProtocol>
+
+/*
+ * An NSString containing the app's SpotX API key.
+ */
+@property (nonatomic, copy) NSString *apikey;
 
 /*
  * An NSString containing the SpotX Channel ID.
