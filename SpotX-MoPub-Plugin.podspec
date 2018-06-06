@@ -7,12 +7,12 @@
 #
 
 Pod::Spec.new do |s|
-  s.version          = '4.0.0'
+  s.version          = '4.0.1'
   s.name             = 'SpotX-MoPub-Plugin'
   s.summary          = 'MoPub plugin for SpotXchange'
   s.authors          = 'SpotXchange, Inc.'
   s.homepage         = 'http://www.spotxchange.com'
-  s.source           = { :git => 'https://github.com/spotxmobile/spotx-mopub-ios.git', tag: '4.0.0' }
+  s.source           = { :git => 'https://github.com/spotxmobile/spotx-mopub-ios.git', tag: '4.0.1' }
   s.license          =  'MIT'
   s.platform         = :ios, '9.0'
   s.requires_arc     = true
